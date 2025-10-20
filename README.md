@@ -116,28 +116,20 @@ Internal tree node with sophisticated balancing logic:
 ### Rank System
 Each node's rank equals the size of its left subtree, enabling O(log n) position lookups without storing explicit indices.
 
-## Code Style
-
-The codebase uses **minimal inline comments** in the format `//comment` (no space after `//`). Comments are concise labels summarizing complex logic blocks:
-- `//leaf-insert` - Base case for insertion
-- `//rot-L` / `//rot-R` - Single rotations
-- `//fix-LL` / `//fix-LR` - Imbalance corrections
-- `//step-left` / `//step-right` - Traversal directions
-
 ## Testing Status
 
-### ✅ Milestone 1: **PASSING** (23/23 tests)
+### Milestone 1: **PASSING** (23/23 tests)
 - Basic tree construction
 - Simple insertions and deletions
 - String representation
 - Rank validation
 
-### ✅ Milestone 2: **PASSING** (tests passing)
+### Milestone 2: **PASSING** (tests passing)
 - Complex insertions with rotations
 - Deletion with rebalancing
 - Edge case handling
 
-### ⚠️ Milestone 3: **PARTIALLY COMPLETE** (89/93 tests passing)
+### Milestone 3: **PARTIALLY COMPLETE** (89/93 tests passing)
 - Advanced rotation scenarios
 - Large-scale tree operations
 - **Note**: 4 test failures remain in complex rotation cases
